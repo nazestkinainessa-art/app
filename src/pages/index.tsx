@@ -3,6 +3,7 @@ import { Header } from "@/widgets/header/ui/Header";
 import { Footer } from "@/widgets/footer/ui/Footer";
 import { PageHeading } from "@/shared/heading/PageHeading";
 import { SegmentedControl } from "@/shared/ui/segmented/SegmentedControl";
+import {SeasonCard} from "@/entities/season/ui/SeasonCard";
 
 export default function Leaders() {
   return (
@@ -13,6 +14,9 @@ export default function Leaders() {
         <main className="flex-1">
           <PageHeading description="ПРОДВИГАЙТЕСЬ В РЕЙТИНГЕ СЕЗОНА И ПОЛУЧАЙТЕ НАГРАДЫ,ОПЫТ СУММИРУЕТСЯ В ОБЩИЙ РЕЙТИНГ" />
           <SegmentedControl />
+          <div className='flex overflow-x-auto gap-3 px-4 mt-4'>
+          <SeasonCard />
+          </div>
         </main>
 
         <Footer />
